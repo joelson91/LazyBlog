@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+
+{% block post_title %}{{ post.title }}{% endblock %}
+{% block post_description %}{{ post.post_date|date:'F j, Y' }}{% endblock %}
+
+{% block content %}
+    <article>
+        {{ post.content }}
+    </article>
+{% endblock %}
